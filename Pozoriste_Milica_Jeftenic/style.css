@@ -1,0 +1,149 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Segoe UI;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+}
+
+
+.container,
+.login-box {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.08);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    color: #ffd369;
+    margin-bottom: 25px;
+}
+
+
+input[type=text],
+input[type=password],
+input[type=datetime-local],
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    margin-top: 5px;
+    font-size: 16px;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    box-sizing: border-box;
+}
+
+    input::placeholder,
+    textarea::placeholder {
+        color: #ddd;
+    }
+
+.btn,
+input[type=submit],
+button {
+    background: #ffd369;
+    color: #222;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 12px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+    .btn:hover,
+    input[type=submit]:hover,
+    button:hover {
+        background: #ffb703;
+        transform: scale(1.05);
+    }
+
+.nav {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+    .nav a {
+        text-decoration: none;
+        background: #00adb5;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 12px;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+
+        .nav a:hover {
+            background: #00cfd8;
+            transform: scale(1.05);
+        }
+
+a {
+    color: #ffd369;
+    font-weight: bold;
+}
+
+.grid {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+    .grid th {
+        background: #00adb5;
+        color: white;
+        padding: 14px;
+        text-align: center;
+    }
+
+    .grid td {
+        background: rgba(255,255,255,0.08);
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .grid tr:hover td {
+        background: rgba(255,255,255,0.15);
+    }
+
+span,
+label {
+    color: #ffdf91;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+
+    .container,
+    .login-box {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .nav a {
+            width: 90%;
+            text-align: center;
+        }
+}
